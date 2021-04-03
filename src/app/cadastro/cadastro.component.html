@@ -1,0 +1,119 @@
+<div class="container">
+  <app-titulo [titulo]="titulo"></app-titulo>
+  <div class="box-actions" style="text-align: right;">
+    <button type="submit" class="btn btn-success" style="margin: 0 15px;">Salva</button>
+    <button class="btn btn-info">Limpar</button>
+  </div>
+  <form role="form">
+    <div class="container">
+      <fieldset>
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Nome Completo</label>
+              <input type="text" class="form-control">
+            </div>
+          </div>
+          <div class="form-group col-lg-3">
+            <label for="exampleInputEmail1">CPF</label>
+            <input type="text" class="form-control cpf-mask" placeholder="Ex.: 000.000.000-00" maxlength="14">
+          </div>
+          <div class="form-group col-lg-2">
+            <label for="exampleInputEmail1">RG</label>
+            <input type="text" class="form-control">
+          </div>
+          <div class="form-group col-lg-3">
+            <label for="exampleInputEmail1">Data de Nascimento</label>
+            <input type="date" class="form-control">
+          </div>
+          <div class="form-group col-lg-2">
+            <label for="exampleInputEmail1">Hora</label>
+            <input type="time" class="form-control">
+          </div>
+          <div class="conteiner">
+            <label for="exampleInputEmail1">Sexo</label>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+              <label class="form-check-label" for="flexRadioDefault1">
+                Masculino
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+              <label class="form-check-label" for="flexRadioDefault2">
+                Feminino
+              </label>
+            </div>
+          </div>
+          <div class="form-group col-lg-9">
+            <label for="formGroupExampleInput" class="form-label">Endereço</label>
+            <input type="text" class="form-control">
+          </div>
+          <div class="form-group col-lg-2">
+            <label for="exampleInputEmail1">Estado</label>
+            <select class="form-control">
+              <option></option>
+              <option>AC</option>
+              <option>AL</option>
+              <option>AP</option>
+              <option>AM</option>
+              <option>BA</option>
+              <option>CE</option>
+              <option>DF</option>
+              <option>ES</option>
+              <option>GO</option>
+              <option>MA</option>
+              <option>MT</option>
+              <option>MS</option>
+              <option>MG</option>
+              <option>PA</option>
+              <option>PB</option>
+              <option>PR</option>
+              <option>PE</option>
+              <option>PI</option>
+              <option>RJ</option>
+              <option>RN</option>
+              <option>RS</option>
+              <option>RO</option>
+              <option>RR</option>
+              <option>SC</option>
+              <option>SP</option>
+              <option>SE</option>
+              <option>TO</option>
+            </select>
+          </div>
+
+          <div class="form-group col-lg-5">
+            <label for="exampleInputEmail1">Cidade</label>
+            <input type="text" class="form-control">
+          </div>
+          <div class="form-group col-lg-5">
+            <label for="exampleInputEmail1">Bairro</label>
+            <input type="text" class="form-control">
+          </div>
+          <div class="form-group col-lg-2">
+            <label for="exampleInputEmail1">CEP</label>
+            <input type="number" class="form-control cep-mask" placeholder="Ex.: 00000-000">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="form-group col-lg-6">
+            <label for="exampleInputEmail1">Email</label>
+            <input type="email" class="form-control">
+          </div>
+          <div class="form-group col-lg-3">
+            <label for="exampleInputEmail1">Senha</label>
+            <input type="password" class="form-control">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="exampleFormControlTextarea1">Observações adicionais</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+
+      </fieldset>
+    </div>
+  </form>
+</div>
